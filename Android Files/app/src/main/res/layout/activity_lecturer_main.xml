@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context="com.damlek.ctiapp.LecturerMainActivity"
+    android:orientation="vertical">
+
+    <!--TOP IMAGE-->
+    <RelativeLayout
+        android:id="@+id/top_section"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- LOGOUT BUTTON -->
+        <ImageButton
+            android:id="@+id/button_logout"
+            android:src="@drawable/logout"
+            android:background="@null"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxWidth="70dp"
+            android:maxHeight="70dp"
+            android:scaleType="fitCenter"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop= "true"
+            android:onClick="logout"/>
+
+
+        <!--WELCOME TEXT-->
+        <TextView
+            android:id="@+id/welcome_text"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textColor="@color/offWhite"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="20sp"/>
+
+
+
+
+        <!-- LOGO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:layout_weight="2"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white"
+            android:id="@+id/div1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+            <Button
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:text="Select Module"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="16sp"
+                android:onClick="selectModule"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

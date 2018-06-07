@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_student_menu"
+    tools:context="com.damlek.ctiapp.StudentMenuActivity"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+    <LinearLayout
+        android:id="@+id/action_bar_layout"
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp">
+
+        <ImageButton
+            android:id="@+id/button_back"
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/back_button"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+
+        android:layout_below="@+id/action_bar_layout">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*"
+            android:paddingBottom="30dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        style="@style/MenuOptionButton"
+                        android:id="@+id/button_student_id"
+                        android:src="@drawable/student_id"/>
+
+                    <TextView
+                        style="@style/MenuOptionText"
+                        android:id="@+id/menu_text_student_id"
+                        android:text="Student ID"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        style="@style/MenuOptionButton"
+                        android:id="@+id/button_timetables"
+                        android:src="@drawable/timetables" />
+
+                    <TextView
+                        style="@style/MenuOptionText"
+                        android:id="@+id/menu_text_timetables"
+                        android:text="Timetables"/>
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        style="@style/MenuOptionButton"
+                        android:id="@+id/button_deadlines"
+                        android:src="@drawable/deadlines"/>
+
+                    <TextView
+                        style="@style/MenuOptionText"
+                        android:id="@+id/menu_text_deadlines"
+                        android:text="Deadlines"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        style="@style/MenuOptionButton"
+                        android:id="@+id/button_marks"
+                        android:src="@drawable/marks"/>
+
+                    <TextView
+                        style="@style/MenuOptionText"
+                        android:id="@+id/menu_text_marks"
+                        android:text="Marks"/>
+
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        style="@style/MenuOptionButton"
+                        android:id="@+id/button_finances"
+                        android:src="@drawable/finances"/>
+
+                    <TextView
+                        style="@style/MenuOptionText"
+                        android:id="@+id/menu_text_finances"
+                        android:text="Finances"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        style="@style/MenuOptionButton"
+                        android:id="@+id/button_events"
+                        android:src="@drawable/events"/>
+
+                    <TextView
+                        style="@style/MenuOptionText"
+                        android:id="@+id/menu_text_events"
+                        android:text="Events"/>
+
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        style="@style/MenuOptionButton"
+                        android:id="@+id/button_year_planner"
+                        android:src="@drawable/year_planner"/>
+
+                    <TextView
+                        style="@style/MenuOptionText"
+                        android:id="@+id/menu_text_year_planner"
+                        android:text="Year Planner"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        style="@style/MenuOptionButton"
+                        android:id="@+id/button_support"
+                        android:src="@drawable/support"/>
+
+                    <TextView
+                        style="@style/MenuOptionText"
+                        android:id="@+id/menu_text_support"
+                        android:text="Support"/>
+
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

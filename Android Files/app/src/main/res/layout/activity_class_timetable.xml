@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.damlek.ctiapp.ClassTimetableActivity"
+    android:background="@color/lighterGrey">
+
+    <FrameLayout
+        android:id="@+id/action_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true">
+
+    </FrameLayout>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/action_bar"
+        android:stretchColumns="1">
+
+        <!-- ROW 1 -->
+        <TableRow
+            android:layout_weight="1">
+            <!-- Column 1 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/text_blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="@color/white"
+                    android:layout_margin="1dip"
+                    android:padding="5dp"
+                    android:text="" />
+            </LinearLayout>
+
+
+            <!-- Column 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/text_mon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="@color/white"
+                    android:layout_margin="1dip"
+                    android:padding="5dp"
+                    android:text="Mon" />
+            </LinearLayout>
+
+            <!-- Column 3 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/text_tue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="@color/white"
+                    android:layout_margin="1dip"
+                    android:padding="5dp"
+                    android:text="Tue" />
+            </LinearLayout>
+
+            <!-- Column 4 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/text_wed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="@color/white"
+                    android:layout_margin="1dip"
+                    android:padding="5dp"
+                    android:text="Wed" />
+            </LinearLayout>
+
+            <!-- Column 5 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/text_thu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="@color/white"
+                    android:layout_margin="1dip"
+                    android:padding="5dp"
+                    android:text="Thu" />
+            </LinearLayout>
+
+             <!-- Column 6 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/text_fri"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="@color/white"
+                    android:layout_margin="1dip"
+                    android:padding="5dp"
+                    android:text="Fri" />
+            </LinearLayout>
+        </TableRow>
+
+
+        <!-- ROW 2 -->
+        <TableRow
+            android:layout_weight="1">
+            <!-- Column 1 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8">
+                <TextView
+                    style="@style/timetable_header"
+                    android:id="@+id/text_time1"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="08:00\n-\n08:50" />
+            </LinearLayout>
+
+
+            <!-- Column 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    style="@style/timetable_text"
+                    android:id="@+id/m1"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="1"/>
+            </LinearLayout>
+
+            <!-- Column 3 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    style="@style/timetable_text"
+                    android:id="@+id/t1"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="9"/>
+            </LinearLayout>
+
+            <!-- Column 4 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    style="@style/timetable_text"
+                    android:id="@+id/w1"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="17"/>
+            </LinearLayout>
+
+            <!-- Column 5 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/th1"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="25"/>
+            </LinearLayout>
+
+            <!-- Column 6 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/f1"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="33"/>
+            </LinearLayout>
+        </TableRow>
+
+        <!-- ROW 3-->
+        <TableRow
+            android:layout_weight="1">
+            <!-- Column 1 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8">
+                <TextView
+                    android:id="@+id/text_time2"
+                    style="@style/timetable_header"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="09:00\n-\n09:50" />
+            </LinearLayout>
+
+
+            <!-- Column 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/m2"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="2"/>
+            </LinearLayout>
+
+            <!-- Column 3 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/t2"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="10"/>
+            </LinearLayout>
+
+            <!-- Column 4 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/w2"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="18"/>
+            </LinearLayout>
+
+            <!-- Column 5 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/th2"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="26"/>
+            </LinearLayout>
+
+            <!-- Column 6 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/f2"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="34"/>
+            </LinearLayout>
+        </TableRow>
+
+        <!-- ROW 4 -->
+        <TableRow
+            android:layout_weight="1">
+            <!-- Column 1 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8">
+                <TextView
+                    android:id="@+id/text_time3"
+                    style="@style/timetable_header"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="10:00\n-\n10:50" />
+            </LinearLayout>
+
+
+            <!-- Column 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/m3"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="3"/>
+            </LinearLayout>
+
+            <!-- Column 3 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/t3"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="11"/>
+            </LinearLayout>
+
+            <!-- Column 4 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/w3"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="19"/>
+            </LinearLayout>
+
+            <!-- Column 5 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/th3"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="27"/>
+            </LinearLayout>
+
+            <!-- Column 6 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/f3"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="35"/>
+            </LinearLayout>
+        </TableRow>
+
+
+        <!-- ROW 5 -->
+        <TableRow
+            android:layout_weight="1">
+            <!-- Column 1 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8">
+                <TextView
+                    android:id="@+id/text_time4"
+                    style="@style/timetable_header"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="11:00\n-\n11:50" />
+            </LinearLayout>
+
+
+            <!-- Column 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/m4"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="4"/>
+            </LinearLayout>
+
+            <!-- Column 3 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/t4"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="12"/>
+            </LinearLayout>
+
+            <!-- Column 4 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/w4"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="20"/>
+            </LinearLayout>
+
+            <!-- Column 5 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/th4"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="28"/>
+            </LinearLayout>
+
+            <!-- Column 6 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/f4"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="36"/>
+            </LinearLayout>
+        </TableRow>
+
+
+        <!-- ROW 6 -->
+        <TableRow
+            android:layout_weight="1">
+            <!-- Column 1 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8">
+                <TextView
+                    android:id="@+id/text_time5"
+                    style="@style/timetable_header"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="12:30\n-\n13:20" />
+            </LinearLayout>
+
+
+            <!-- Column 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/m5"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="5"/>
+            </LinearLayout>
+
+            <!-- Column 3 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/t5"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="13"/>
+            </LinearLayout>
+
+            <!-- Column 4 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/w5"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="21"/>
+            </LinearLayout>
+
+            <!-- Column 5 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/th5"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="29"/>
+            </LinearLayout>
+
+            <!-- Column 6 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/f5"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="37"/>
+            </LinearLayout>
+        </TableRow>
+
+        <!-- ROW 7 -->
+        <TableRow
+            android:layout_weight="1">
+            <!-- Column 1 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8">
+                <TextView
+                    android:id="@+id/text_time6"
+                    style="@style/timetable_header"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="13:30\n-\n14:20" />
+            </LinearLayout>
+
+
+            <!-- Column 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/m6"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="6"/>
+            </LinearLayout>
+
+            <!-- Column 3 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/t6"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="14"/>
+            </LinearLayout>
+
+            <!-- Column 4 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/w6"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="22"/>
+            </LinearLayout>
+
+            <!-- Column 5 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/th6"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="30"/>
+            </LinearLayout>
+
+            <!-- Column 6 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/f6"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="38"/>
+            </LinearLayout>
+        </TableRow>
+
+        <!-- ROW 8 -->
+        <TableRow
+            android:layout_weight="1">
+            <!-- Column 1 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8">
+                <TextView
+                    android:id="@+id/text_time7"
+                    style="@style/timetable_header"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="14:30\n-\n15:20" />
+            </LinearLayout>
+
+
+            <!-- Column 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/m7"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="7"/>
+            </LinearLayout>
+
+            <!-- Column 3 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/t7"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="15"/>
+            </LinearLayout>
+
+            <!-- Column 4 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/w7"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="23"/>
+            </LinearLayout>
+
+            <!-- Column 5 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/th7"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="31"/>
+            </LinearLayout>
+
+            <!-- Column 6 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/f7"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="39"/>
+            </LinearLayout>
+        </TableRow>
+
+        <!-- ROW 9 -->
+        <TableRow
+            android:layout_weight="1">
+            <!-- Column 1 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8">
+                <TextView
+                    android:id="@+id/text_time8"
+                    style="@style/timetable_header"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="15:30\n-\n16:20" />
+            </LinearLayout>
+
+
+            <!-- Column 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/m8"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="8"/>
+            </LinearLayout>
+
+            <!-- Column 3 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/t8"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="16"/>
+            </LinearLayout>
+
+            <!-- Column 4 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/w8"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="24"/>
+            </LinearLayout>
+
+            <!-- Column 5 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/th8"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="32"/>
+            </LinearLayout>
+
+            <!-- Column 6 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/f8"
+                    style="@style/timetable_text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:onClick="showSessionInfo"
+                    android:tag="4"/>
+            </LinearLayout>
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_year_planner_month"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.damlek.ctiapp.YearPlannerMonthActivity"
+    android:background="#cccccc">
+
+    <FrameLayout
+        android:id="@+id/action_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true">
+
+    </FrameLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/action_bar"
+        android:stretchColumns="*">
+
+        <!-- ROW 1 -->
+        <TableRow android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <!-- [0,0] -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/button_jan"
+
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_height="match_parent"
+                        android:onClick="monthEvents"
+
+                        android:text="January"
+                        android:textColor="@color/colorPrimary" />
+                </LinearLayout>
+
+
+                <!-- [0,1] -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/button_feb"
+
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_height="match_parent"
+                        android:onClick="monthEvents"
+
+                        android:text="February"
+                        android:textColor="@color/colorPrimary"/>
+                </LinearLayout>
+
+                <!-- [0,2] -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/button_mar"
+
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:layout_marginLeft="3dp"
+                        android:onClick="monthEvents"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_height="match_parent"
+
+                        android:text="March"
+                        android:textColor="@color/colorPrimary"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <!-- ROW 2 -->
+        <TableRow
+            android:layout_weight="1">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <!-- [1,0] -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/button_apr"
+
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:onClick="monthEvents"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_height="match_parent"
+
+                        android:text="April"
+                        android:textColor="@color/colorPrimary"/>
+                </LinearLayout>
+
+
+                <!-- [1,1] -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/button_may"
+
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:onClick="monthEvents"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_height="match_parent"
+
+                        android:text="May"
+                        android:textColor="@color/colorPrimary"/>
+                </LinearLayout>
+
+                <!-- [1,2] -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/button_jun"
+
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:layout_marginLeft="3dp"
+                        android:onClick="monthEvents"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_height="match_parent"
+
+                        android:text="June"
+                        android:textColor="@color/colorPrimary"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </TableRow>
+
+        <!-- ROW 3 -->
+        <TableRow
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <!-- [2,0] -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/button_jul"
+
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:layout_marginLeft="3dp"
+                        android:onClick="monthEvents"
+                        android:layout_marginTop="3dp"
+                        android:layout_height="match_parent"
+
+                        android:text="July"
+                        android:textColor="@color/colorPrimary"/>
+                </LinearLayout>
+
+
+                <!-- [2,1] -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/button_aug"
+
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:layout_marginLeft="3dp"
+                        android:onClick="monthEvents"
+                        android:layout_marginTop="3dp"
+                        android:layout_height="match_parent"
+
+                        android:text="August"
+                        android:textColor="@color/colorPrimary"/>
+                </LinearLayout>
+
+                <!-- [2,2] -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/button_sep"
+
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:onClick="monthEvents"
+                        android:layout_marginTop="3dp"
+                        android:layout_height="match_parent"
+
+                        android:text="September"
+                        android:textColor="@color/colorPrimary"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <!-- ROW 4 -->
+        <TableRow
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <!-- [3,0] -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/button_oct"
+
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:onClick="monthEvents"
+                        android:layout_marginTop="3dp"
+                        android:layout_height="match_parent"
+
+                        android:text="October"
+                        android:textColor="@color/colorPrimary"/>
+                </LinearLayout>
+
+
+                <!-- [3,1] -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/button_nov"
+
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:layout_marginLeft="3dp"
+                        android:onClick="monthEvents"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_height="match_parent"
+
+                        android:text="November"
+                        android:textColor="@color/colorPrimary"/>
+                </LinearLayout>
+
+                <!-- [3,2] -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/button_dec"
+
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:onClick="monthEvents"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:background="@color/white"
+                        android:layout_height="match_parent"
+
+                        android:text="December"
+                        android:textColor="@color/colorPrimary"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+</RelativeLayout>

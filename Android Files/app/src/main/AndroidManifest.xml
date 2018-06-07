@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.damlek.ctiapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/NoActionBar">
+
+        <!-- LOGIN -->
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- STUDENT MAIN -->
+        <activity android:name=".StudentMainActivity">
+            <intent-filter>
+                <action android:name="com.damlek.ctiapp.StudentMainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- STUDENT MENU -->
+        <activity android:name=".StudentMenuActivity">
+            <intent-filter>
+                <action android:name="com.damlek.ctiapp.StudentMenuActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- TIMETABLES -->
+        <activity android:name=".TimetablesActivity">
+            <intent-filter>
+                <action android:name="com.damlek.ctiapp.TimetablesActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- LECTURER MAIN -->
+        <activity android:name=".LecturerMainActivity">
+            <intent-filter>
+                <action android:name="com.damlek.ctiapp.LecturerMainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- MARKS(LEVELS) -->
+        <activity android:name=".MarksLevelsActivity">
+            <intent-filter>
+                <action android:name="com.damlek.ctiapp.MarksLevelsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- MARKS(MODULES) -->
+        <activity android:name=".MarksModulesActivity">
+            <intent-filter>
+                <action android:name="com.damlek.ctiapp.MarksModulesActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- MARKS -->
+        <activity android:name=".MarksActivity">
+            <intent-filter>
+                <action android:name="com.damlek.ctiapp.MarksActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- FINANCES -->
+        <activity android:name=".FinancesActivity">
+            <intent-filter>
+                <action android:name="com.damlek.ctiapp.FinancesActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- EVENTS -->
+        <activity android:name=".EventsActivity">
+            <intent-filter>
+                <action android:name="com.damlek.ctiapp.EventsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- EVENT DETAILS -->
+        <activity android:name=".EventDetailsActivity">
+            <intent-filter>
+                <action android:name="com.damlek.ctiapp.EventDetailsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- SUPPORT -->
+        <activity android:name=".SupportActivity">
+            <intent-filter>
+                <action android:name="com.damlek.ctiapp.SupportActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- CLASS TIMETABLE -->
+        <activity android:name=".ClassTimetableActivity">
+            <intent-filter>
+                <action android:name="com.damlek.ctiapp.ClassTimetableActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- TEST TIMETABLE -->
+        <activity android:name=".TestTimetableActivity">
+            <intent-filter>
+                <action android:name="com.damlek.ctiapp.TestTimetableActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Exam Timetable -->
+        <activity android:name=".ExamTimetableActivity">
+            <intent-filter>
+                <action android:name="com.damlek.ctiapp.ExamTimetableActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- DEADLINES -->
+        <activity android:name=".DeadlinesActivity">
+            <intent-filter>
+                <action android:name="com.damlek.ctiapp.DeadlinesActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- YEAR PLANNER -->
+        <activity android:name=".YearPlannerActivity">
+            <intent-filter>
+                <action android:name="com.damlek.ctiapp.YearPlannerActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- NEWS DETAILS -->
+        <activity android:name=".NewsDetailActivity">
+            <intent-filter>
+                <action android:name="com.damlek.ctiapp.NewsDetailActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- STUDENT ID -->
+        <activity android:name=".StudentIDActivity">
+            <intent-filter>
+                <action android:name="com.damlek.ctiapp.StudentIDActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SupportDetailActivity">
+            <intent-filter>
+                <action android:name="com.damlek.ctiapp.SupportDetailActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- YEAR PLANNER MONTH -->
+        <activity android:name=".YearPlannerMonthActivity">
+            <intent-filter>
+                <action android:name="com.damlek.ctiapp.YearPlannerMonthActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- SUPPORT MAIN -->
+        <activity android:name=".SupportMainActivity">
+            <intent-filter>
+                <action android:name="com.damlek.ctiapp.SupportMainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- FEEDBACK DETAIL -->
+        <activity android:name=".FeedbackDetailActivity">
+            <intent-filter>
+                <action android:name="com.damlek.ctiapp.FeedbackDetailActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- ATTENDANCE LIST -->
+        <activity android:name=".AttendanceListActivity">
+            <intent-filter>
+                <action android:name="com.damlek.ctiapp.AttendanceListActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LecturerModulesActivity">
+            <intent-filter>
+                <action android:name="com.damlek.ctiapp.LecturerModulesActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".AlertReceiver"/>
+    </application>
+
+</manifest>

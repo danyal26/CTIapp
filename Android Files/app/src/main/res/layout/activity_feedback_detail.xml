@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_feedback_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.damlek.ctiapp.FeedbackDetailActivity">
+
+    <FrameLayout
+        android:id="@+id/action_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true">
+
+    </FrameLayout>
+
+    <TextView
+        style="@style/text_16sp_grey"
+        android:id="@+id/text_sender"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action_bar"
+        android:text="From: "
+        android:layout_margin="15dp"/>
+
+    <!--DIVIDER-->
+    <View
+        android:id="@+id/divider"
+
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#777777"
+        android:layout_below="@+id/text_sender"/>
+
+    <TextView
+        android:id="@+id/text_message"
+        style="@style/EventDetailsText"
+
+        android:layout_below="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/mediumGrey"
+        android:text="Message"/>
+
+
+
+</RelativeLayout>

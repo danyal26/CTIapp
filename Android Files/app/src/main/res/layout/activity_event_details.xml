@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.damlek.ctiapp.EventDetailsActivity">
+
+    <FrameLayout
+        android:id="@+id/action_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true">
+
+    </FrameLayout>
+
+    <!--HEADER-->
+    <LinearLayout
+        android:id="@+id/layout_header"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/action_bar">
+
+        <!--LEFT HEADER-->
+        <RelativeLayout
+            android:id="@+id/layout_left_header"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <!-- ORGANIZER -->
+            <TextView
+                style="@style/EventHeaderText"
+                android:text="Organizer:"
+                android:id="@+id/text_organizer" />
+
+            <!--DATE-->
+            <TextView
+                style="@style/EventHeaderText"
+                android:text="Date:"
+                android:id="@+id/text_date"
+                android:layout_below="@+id/text_organizer"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#777777"
+            android:id="@+id/div1"/>
+
+        <!--RIGHT HEADER-->
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <!--TIME-->
+            <TextView
+                style="@style/EventHeaderText"
+                android:text="Time:"
+                android:id="@+id/text_time" />
+
+            <!--VENUE-->
+            <TextView
+                style="@style/EventHeaderText"
+                android:text="Venue:"
+                android:id="@+id/text_venue"
+                android:layout_below="@+id/text_time"/>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--DIVIDER-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#777777"
+        android:id="@+id/event_header_divider"
+        android:layout_below="@+id/layout_header"/>
+
+    <!--DETAILS LAYOUT-->
+    <LinearLayout
+        android:id="@+id/layout_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/event_header_divider"
+        android:layout_above="@+id/checkbox_section">
+
+        <!--DETAILS-->
+        <TextView
+            style="@style/EventDetailsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:id="@+id/text_details"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/checkbox_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/mediumGrey"
+        android:gravity="center">
+
+        <CheckBox
+            android:id="@+id/checkbox_attending"
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Attending"
+            android:textSize="25sp"
+            android:padding="15dp" />
+
+    </LinearLayout>
+
+    <!--ATTENDING-->
+
+
+</RelativeLayout>

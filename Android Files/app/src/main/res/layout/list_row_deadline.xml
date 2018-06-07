@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/row_layout"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- MODULE NAME -->
+    <TextView
+        android:id="@+id/text_main"
+
+        android:layout_toRightOf="@+id/date_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Module Name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+    <!-- MODULE ID -->
+    <TextView
+        android:id="@+id/text_subtext"
+
+        android:layout_toEndOf="@+id/date_divider"
+        android:layout_below="@+id/text_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Module ID"
+        android:textColor="@color/darkGrey"
+        android:textSize="15sp"
+        android:paddingLeft="25dp"
+        android:maxLines="2"/>
+
+    <View
+        android:id="@+id/date_divider"
+
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/lightGrey"
+        android:layout_toEndOf="@id/text_date"
+        />
+
+    <!-- DEADLINE -->
+    <TextView
+        android:id="@+id/text_due"
+
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Deadline"
+        android:textSize="13sp"
+        android:padding="1dp"
+        android:textAlignment="center"
+        />
+
+    <!-- DATE/TIME -->
+    <TextView
+        android:id="@+id/text_date"
+
+        android:layout_alignParentStart="true"
+        android:text="Date"
+        android:gravity="center"
+        android:textColor="@color/mediumGrey"
+        android:textSize="20sp"
+        android:layout_height="match_parent"
+        android:layout_width="70dp" />
+
+    <ImageButton
+        android:id="@+id/button_notify_individual"
+
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/notify_button"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

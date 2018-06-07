@@ -1,0 +1,172 @@
+<resources>
+
+    <!-- ACTION BAR THEME -->
+
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorButton</item>
+        <item name="android:colorForeground">@android:color/white</item>
+
+        <item name="colorControlNormal">#c5c5c5</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+    <!-- NO ACTION BAR THEME -->
+
+    <style name="NoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/darkerGrey</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorButton</item>
+
+        <item name="colorControlNormal">#c5c5c5</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="android:textColorHint">@color/colorPrimaryLight</item>
+    </style>
+
+    <!-- TEXT VIEWS -->
+    <style name="text_16sp_grey">
+        <item name="android:textColor">@color/darkGrey</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="text_16sp_red">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="text_14sp_grey">
+        <item name="android:textColor">@color/darkGrey</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="text_14sp_red">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- MENU BUTTONS -->
+    <style name="MenuOptionButton">
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:padding">25dp</item>
+    </style>
+
+    <!-- MENU TEXT -->
+    <style name="MenuOptionText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- EVENT HEADER -->
+    <style name="EventHeaderText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/darkGrey</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="EventHeaderText2">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/darkGrey</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="EventDetailsText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/darkGrey</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_margin">15dp</item>
+    </style>
+
+    <!-- NEWS HEADER -->
+    <style name="NewsHeaderText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="NewsDetailsText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">#444444</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_margin">15dp</item>
+    </style>
+
+    <style name="SpinnerElement">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">#444444</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!-- STUDENT NAME AND NUMBER -->
+    <style name="student_id">
+        <item name="android:textColor">@color/darkGrey</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <!-- ACTION BAR TITLE -->
+    <style name="action_bar_title">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="timetable_text">
+        <item name="android:textColor">@color/darkGrey</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_margin">1dip</item>
+    </style>
+
+    <!-- TIMETABLE HEADER -->
+    <style name="timetable_header">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_margin">1dip</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+</resources>

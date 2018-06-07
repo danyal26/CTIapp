@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@color/white">
+
+    <!-- DATE -->
+    <TextView
+        android:id="@+id/text_date"
+
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Date"
+        android:gravity="center"
+        android:textColor="@color/darkGrey"
+        android:textSize="20sp"
+        android:layout_alignParentStart="true"/>
+
+    <!-- DIVIDER -->
+    <View
+        android:id="@+id/divider1"
+
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="#777777"
+        android:layout_toEndOf="@+id/text_date"/>
+
+    <!-- MAIN SECTION -->
+    <LinearLayout
+        android:id="@+id/main_section"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/divider1"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/date_time_section">
+
+        <!-- MAIN TEXT -->
+        <TextView
+            android:id="@+id/text_main"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course Name"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"
+
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <!-- SUBTEXT -->
+        <TextView
+            android:id="@+id/text_subtext"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_main"
+            android:text="Course ID"
+            android:gravity="center"
+            android:textColor="@color/mediumGrey"
+            android:textSize="16sp"
+            android:paddingLeft="30dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/date_time_section"
+
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true">
+
+        <!-- VENUE -->
+        <TextView
+            android:id="@+id/text_venue"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Venue"
+            android:gravity="center"
+            android:textColor="@color/darkGrey"
+            android:textSize="16sp"/>
+
+        <!-- TIME -->
+        <TextView
+            android:id="@+id/text_time"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:gravity="center"
+            android:textColor="@color/darkGrey"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

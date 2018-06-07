@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/white">
+
+    <!-- SENDER NAME -->
+    <TextView
+        android:id="@+id/text_main"
+
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sender"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:paddingStart="20dp"/>
+
+    <!-- DATE/TIME -->
+    <TextView
+        android:id="@+id/text_date"
+
+        android:layout_alignParentEnd="true"
+        android:paddingEnd="10dp"
+        android:text="Date"
+        android:gravity="right"
+        android:textColor="@color/mediumGrey"
+        android:textSize="15sp"
+        android:paddingTop="10dp"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content" />
+
+    <!-- HIDE TEXT -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_hide"
+        android:textColor="@android:color/holo_orange_dark"
+        android:text=""
+        android:textSize="20sp"
+        android:paddingRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true" />
+
+    <!-- MESSAGE -->
+    <TextView
+        android:id="@+id/text_subtext"
+
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/text_date"
+
+        android:text="Message"
+        android:gravity="left"
+        android:textColor="@color/darkGrey"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:paddingStart="35dp"
+        android:paddingBottom="15dp"
+
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+
+</RelativeLayout>
